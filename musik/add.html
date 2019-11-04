@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML5 Audio Player</title>
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+		
+		<link rel="stylesheet" href="css/style.css" media="screen">
+	</head>
+	<body>
+		<form>
+			<div class="row" style="margin-left:18%;">
+				<ul class="nav" style="list-style-type:inline">
+				<div class ="col-md-3"style="padding-top:30px;color:white;">
+					<li><a href="playlist.html" style="color:white;">playList</a></li>
+				</div>
+				<div class ="col-md-3"style="padding-top:30px;" >
+					<li><a href="sound.html" style="color:white;">Media</a></li>
+				</div>
+				<div class ="col-md-3" style="padding-top:30px;color:white;">
+					<li><a href="add.html" style="color:white;">Addsong</a></li>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-8" style="background-color:#ccc;margin-top:40px;margin-left:5px;">
+					<div class="row">
+						<div class="col-md-12" style="margin-top:15px;">
+							<div class="form-group">
+								<label for="usr">Song Title:</label>
+								<input type="text" class="form-control"placeholder="Enter the song title" required="required" />
+							</div>
+						</div>
+					</div><br>
+					<div class="row">
+						<div class="col-md-12" style="margin-top:15px;">
+							<input id="image" type="file"name="profile_photo"placeholder="Photo" required="required"capture />
+						</div>
+					</div><br>
+					<div class="row">
+						<div class="col-md-12" style="margin-top:15px;">
+							<input id="image" type="file"name="song"placeholder="select song" required="required"capture />
+						</div>
+					</div><br>
+					<div class="row">
+						<div class="col-md-12">
+							<input style="background-color:#4f5e60;margin-left:180px; margin-bottum:50px; color:white;"type="button" value="upload" controler=""/>
+						</div>
+					</div>
+				 </div>   
+				 <div class="col-md-2"></div>
+			</div>
+		</form>
+	</body>
+</html>

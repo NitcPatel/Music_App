@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML5 Audio Player</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    
+    <link rel="stylesheet" href="css/style.css" media="screen">
+</head>
+<body>
+	
+	<div id="container">
+		<div>
+		<div class="row" style="margin-left:18%;">
+			 <ul class="nav" style="list-style-type:inline">
+				<div class ="col-md-3"style="padding-top:30px;color:white;">
+					<li><a href="playlist.html" style="color:white;">playList</a></li>
+				</div>
+				<div class ="col-md-3"style="padding-top:30px;" >
+					<li><a href="sound.html" style="color:white;">Media</a></li>
+				</div>
+				<div class ="col-md-3" style="padding-top:30px;color:white;">
+					<li><a href="add.html" style="color:white;">Addsong</a></li>
+				</div>
+		</div>
+	</div>
+		<div id="audio-image">
+			<img class="cover" />
+		</div>
+		<div id="audio-player">
+			<div id="audio-info">
+				<span class="artist"></span> - <span class="title"></span>
+			</div>
+			<input id="volume" type="range" min="0" max="10" value="5" />
+			<br>
+			<div id="buttons">
+				<span>
+					<button id="prev"></button>
+					<button id="play"></button>
+					<button id="pause"></button>
+					<button id="stop"></button>
+					<button id="next"></button>
+				</span>
+			</div>
+			<div class="clearfix"></div>
+				<div id="tracker">
+					<div id="progressBar">
+						<span id="progress"></span>
+					</div>
+					<span id="duration"></span>
+				</div>
+				<div class="clearfix"></div>
+				<ul id="playlist" class="hidden">
+					<li song="01.TUM SE ACHCHA KAUN HAI.mp3" cover="c1.jpeg" artist="Linkin Park">01.TUM SE ACHCHA KAUN HAI.mp3</li>
+					<li song="01 Baby Ko Bass Pasand Hai (SongsMp3.Com).mp3" cover="c2.jpeg" artist="Linkin Park"> 02 Baby Ko Bass Pasand Hai (SongsMp3.Com).mp3</li>
+					<li song="01 barsaat ke din aaye .mp3" cover="c3.jpeg" artist="Linkin Park"> 03 barsaat ke din aaye .mp3</li>
+					<li song="01 Dil diwana na jaane {Duet}.mp3" cover="c4.jpeg" artist="Linkin Park"> 01 Dil diwana na jaane {Duet}.mp3</li>
+					<li song="01 dil se dilbar .mp3" cover="c5.jpeg" artist="Linkin Park"> 01 dil se dilbar .mp3</li>
+					<li song="01 pehle kabhi na mera haal .mp3" cover="c1.jpeg" artist="Linkin Park"> 01 pehle kabhi na mera haal .mp3</li>
+					<li song="01 Saari raat teri yaad.mp3" cover="c2.jpeg" artist="Linkin Park"> 01 Saari raat teri yaad.mp3</li>
+					<li song="01 Tere pyaar mein.mp3" cover="c3.jpeg" artist="Linkin Park"> 01 Tere pyaar mein.mp3</li>
+					<li song="01 Woh Ho Tum.mp3" cover="c4.jpeg" artist="Linkin Park"> 01 Woh Ho Tum.mp3</li>
+				</ul>
+			</div>
+		</div>
+	<script src="js/jquery.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
